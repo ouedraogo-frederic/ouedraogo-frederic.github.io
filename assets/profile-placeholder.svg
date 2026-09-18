@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720">
+<rect width="600" height="720" fill="#dfe8e1"/>
+<circle cx="300" cy="245" r="115" fill="#315c52"/>
+<path d="M105 620c20-155 115-230 195-230s175 75 195 230" fill="#315c52"/>
+<text x="300" y="680" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#18352f">Frédéric OUEDRAOGO</text>
+</svg>

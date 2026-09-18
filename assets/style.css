@@ -1,0 +1,69 @@
+
+:root{
+  --ink:#18352f;
+  --ink2:#315c52;
+  --accent:#b56b3a;
+  --cream:#f7f4ed;
+  --paper:#ffffff;
+  --muted:#68756f;
+  --line:#dfe5df;
+  --shadow:0 12px 35px rgba(24,53,47,.08);
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(247,244,237,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:var(--max);margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{font-family:Georgia,serif;font-size:1.2rem;font-weight:700;letter-spacing:.04em}
+.brand span{color:var(--accent)}
+.menu{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.menu a{padding:8px 11px;border-radius:7px;font-size:.9rem;color:var(--ink2)}
+.menu a:hover,.menu a.active{background:#e8eee9;color:var(--ink)}
+.hero{max-width:var(--max);margin:54px auto 30px;padding:30px 24px;display:grid;grid-template-columns:280px 1fr;gap:55px;align-items:center}
+.portrait{width:250px;height:300px;border-radius:18px;overflow:hidden;background:linear-gradient(145deg,#dfe8e1,#c5d3ca);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;color:var(--ink2);text-align:center;padding:25px}
+.portrait strong{font-family:Georgia,serif;font-size:4rem;display:block}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;color:var(--accent);font-weight:700}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.15}
+h1{font-size:clamp(2.7rem,6vw,5rem);margin:12px 0}
+h2{font-size:2.1rem;margin:0 0 14px}
+h3{font-size:1.35rem;margin:0 0 8px}
+.lead{font-size:1.2rem;color:var(--ink2);max-width:760px}
+.buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-block;border:1px solid var(--ink);padding:10px 16px;border-radius:8px;font-size:.9rem}
+.btn.primary{background:var(--ink);color:white}
+.btn:hover{transform:translateY(-1px)}
+.container{max-width:var(--max);margin:auto;padding:25px 24px 70px}
+.section{padding:48px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:25px;box-shadow:var(--shadow)}
+.card p{margin-bottom:0;color:#53625d}
+.tag{display:inline-block;padding:5px 9px;border-radius:20px;background:#e8eee9;color:var(--ink2);font-size:.76rem;margin:4px 4px 0 0}
+.page-hero{max-width:var(--max);margin:0 auto;padding:75px 24px 35px}
+.page-hero p{max-width:780px;color:var(--muted);font-size:1.08rem}
+.accordion{border-top:1px solid var(--line)}
+details{background:white;border:1px solid var(--line);border-radius:10px;margin:12px 0;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:650}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";float:right;color:var(--accent);font-size:1.3rem}
+details[open] summary:after{content:"−"}
+.detail{padding:0 20px 20px;color:#53625d}
+.pub{padding:20px 0;border-bottom:1px solid var(--line)}
+.pub:last-child{border-bottom:0}
+.year{color:var(--accent);font-weight:700;font-size:.85rem}
+.pub-title{font-size:1.08rem;font-weight:650}
+.small{font-size:.88rem;color:var(--muted)}
+.footer{background:var(--ink);color:#eaf0eb;padding:30px 24px}
+.footer-inner{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.photo-placeholder{min-height:210px;border-radius:12px;background:linear-gradient(135deg,#dfe8e1,#bfcfc6);display:flex;align-items:end;padding:18px;font-family:Georgia,serif;color:var(--ink)}
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr;text-align:center;justify-items:center}
+ .lead{margin:auto}
+ .grid,.photo-grid{grid-template-columns:1fr}
+ .nav{align-items:flex-start;flex-direction:column}
+ .menu{width:100%}
+ .menu a{padding:6px 8px}
+}
